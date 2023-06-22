@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+   
+  }
+
+body {
+    background-image: url("nova\ gif.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 200px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .module-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .neon-button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #4200f8;
+    color: #ffffff;
+    box-shadow: 0 0 5px #aef800;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .neon-button:hover {
+    box-shadow: 0 0 20px #f80036;
+  }
+  
+  .neon-button:active {
+    transform: translateY(2px);
+  }
+  
+  .blink {
+    animation: blinkEffect 1s infinite;
+  }
+  
+  @keyframes blinkEffect {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  
